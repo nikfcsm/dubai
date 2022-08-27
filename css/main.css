@@ -359,7 +359,7 @@ h1 {
 .banner__btn2 span {
     margin-left: 56px;
 }
-/* Video */
+/* 3. Video */
 .video {
     padding: 50px 0;
 }
@@ -422,7 +422,7 @@ opacity: 0.9;
 .video__btn1:hover {
     color: #272727;
 }
-/* About Engine */
+/* 4. About Engine */
 .about__engine {
     padding: 0px 4% 0px 12%;
     display: flex;
@@ -530,10 +530,10 @@ color: #484848;
 .about__engine_right-txt p {
     /* padding: 50px 0; */
 }
-/* RoadMap */
+/* 5. RoadMap */
 .roadmap {
     
-    padding: 0 9%;
+    padding: 0 12%;
     margin: 0 auto;
 }
 .roadmap h2 {
@@ -549,4 +549,110 @@ padding-bottom: 30px;
     display: flex;
     justify-content: center;
     margin: 0 auto;
+}
+
+/* 6.  Purchase of NFT premises */
+.purchase {
+    margin: 100px auto;
+    padding: 0 6%;
+}
+.purchase__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.purchase h2 {
+    font-family: 'Syne';
+font-style: normal;
+font-weight: 800;
+font-size: 64px;
+line-height: 77px;
+
+color: #FFFFFF;
+}
+.purchase p {
+
+    font-family: 'Barlow';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+opacity: 0.7;
+}
+.purchase__wrapper_left-txt p {
+    padding: 23px 0;
+}
+.purchase ul li {
+    padding-bottom: 24px;
+    /* list-style: none; */
+    padding-left: 20px;
+    font-family: 'Barlow';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 138.5%;
+color: #FFFFFF;
+opacity: 0.9;
+}
+
+.purchase li::marker {
+    content: url(/img/marker.svg);
+
+  }
+  .purchase__wrapper_left-txt ul {
+    margin-left: 20px;
+  }
+
+
+
+
+.purchase__wrapper_left {
+    max-width: 790px;
+}
+.purchase__wrapper_left-thumb {
+    display: flex;
+    justify-content: space-between;
+}
+.purchase__wrapper_left-thumb img {
+   
+    max-width: 247px;
+}
+.thumb {
+    position: relative;
+}
+.thumb::after {
+    content: "";
+    width: 56px;
+    height: 44px;
+    position: absolute;
+    right: -1px;
+    bottom: 2px;
+    background: url(/img/arrow-slide.svg) no-repeat;
+}
+.thumb img:hover {
+outline: 2px solid #D2B277;
+}
+.slide-item p {
+    font-family: 'Barlow', sans-serif;
+    text-transform: inherit;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 138.5%;
+color: #FFFFFF;
+opacity: 0.89;
+}
+.purchase__wrapper_right {
+    max-width: 730px;
+}
+.purchase__wrapper_right img {
+    padding: 30px 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }

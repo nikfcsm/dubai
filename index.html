@@ -15,6 +15,8 @@
 
     <link rel="stylesheet" href="css/main.css?ver=123">
     <link rel="stylesheet" href="css/screen.css?ver=123">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -110,8 +112,58 @@
 <section class="roadmap">
 <h2>ROADMAP</h2>
 <img src="/img/roadmap.png" alt="">
+</section>
+
+<section class="purchase">
+<div class="purchase__wrapper">
+    <div class="purchase__wrapper_left">
+        <div class="purchase__wrapper_left-txt">
+<h2>Purchase of NFT premises</h2>
+<p>Each location has its own purpose:</p>
+<ul>
+    <li>Retailzone - is a standard space for fashion or retail goods and offices.
+    </li>
+    <li>Education zone - is a place for training</li>
+    <li>Entertainment zone - is a place for social activities, game parlors, and simulation halls.
+    </li>
+    <li>Eventszone - is where major events are held (conferences, exhibitions, competitions etc.</li>
+</ul>
+</div>
+<div class="purchase__wrapper_left-thumb">
+  <a href="#hash1">  <div class="thumb"><img src="/img/thumbnail-1.png" alt=""></div> </a>   
+  <a href="#hash2">  <div class="thumb"> <img src="/img/thumbnail-2.png" alt=""></div>  </a> 
+    <a href="#hash3">    <div class="thumb"> <img src="/img/thumbnail-3.png" alt=""></div>  </a> 
+</div>
+    </div>
+    <div class="purchase__wrapper_right">
+        <div class="owl-carousel">
+<div data-hash="hash1" class="slide-item"><p>The Project creates its own Web3-bas     ed metaverse. The entire MCM space will be made of a collection of NFTs that can be bought, sold or r ented. A total of 200 NFTs will be traded there. It is planned to integrate crypto wallets that will support cryptocurrencies used throughout the Project. It will make it possible to safely store NFTs inside the metaverse.</p>
+<img src="/img/slide2.png" alt="">
+<p>We can take the consumer to whatever unique and wonderful environment they want, the design options are limitless. The MCM provides freedom for your imagination.</p>
+<hr>
+</div>
+
+<div data-hash="hash2" class="slide-item"><p>The Project creates its own Web3-bas     ed metaverse. The entire MCM space will be made of a collection of NFTs that can be bought, sold or r ented. A total of 200 NFTs will be traded there. It is planned to integrate crypto wallets that will support cryptocurrencies used throughout the Project. It will make it possible to safely store NFTs inside the metaverse.</p>
+    <img src="/img/slide2.png" alt="">
+    <p>We can take the consumer to whatever unique and wonderful environment they want, the design options are limitless. The MCM provides freedom for your imagination.</p>
+    <hr>
+    </div>
 
 
+    <div data-hash="hash3" class="slide-item"><p>The Project creates its own Web3-bas     ed metaverse. The entire MCM space will be made of a collection of NFTs that can be bought, sold or r ented. A total of 200 NFTs will be traded there. It is planned to integrate crypto wallets that will support cryptocurrencies used throughout the Project. It will make it possible to safely store NFTs inside the metaverse.</p>
+        <img src="/img/slide2.png" alt="">
+        <p>We can take the consumer to whatever unique and wonderful environment they want, the design options are limitless. The MCM provides freedom for your imagination.</p>
+        <hr>
+        </div>
+
+
+
+</div>
+
+
+
+    </div>
+</div>
 
 
 
@@ -125,13 +177,37 @@
 
 
 
+<script src="js/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+<script>
+   $('.owl-carousel').owlCarousel({
+        items:1,
+        merge:true,
+        loop:true,
+        margin:10,
+        video:true,
+        lazyLoad:true,
+        center:true,
+        responsive:{
+            480:{
+                items:1
+            },
+            600:{
+                items:1
+            }
+        }
+    })
+  </script>
 
 
 
 
 
-
+<script src="js/owl.carousel.min.js"></script>
 <script src="/js/main.js"></script>
+
+
 
 
 
