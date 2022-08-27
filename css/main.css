@@ -192,6 +192,34 @@ opacity: 0.5;
     opacity: 1;
     color: #FFFFFF;
 }
+nav ul {
+    
+    position: relative;
+    }
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    z-index: 222;
+}
+nav ul ul li {
+    text-align: left;
+    padding-right: 0;
+}
+
+
+nav ul li:hover > ul {
+   
+    display:inherit;
+}
+
+
+nav ul ul li {
+    min-width:170px;
+    float:none;
+    display:list-item;
+    position: relative;
+}
 .logo_a {
     padding-top: 22px;
 }
