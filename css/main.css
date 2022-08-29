@@ -169,7 +169,7 @@ header ul {
     text-align: center;
     text-transform: uppercase;
     color: #F4F4F4;
-    opacity: 0.5;
+    /* opacity: 0.5; */
     transition: all 1s;
 }
 
@@ -232,6 +232,7 @@ nav ul li:hover>ul::after {
 }
 
 nav ul ul li {
+    padding-top: 9px;
     min-width: 170px;
     float: none;
     display: list-item;
@@ -498,7 +499,37 @@ h1 {
 .video__btn1:hover {
     color: #272727;
 }
+.video-y {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 90.43%, 96.44% 100%);
+}
+#tool::after {
+    width: 223px;
+    content: "";
+    position: absolute;
+    background: url(/img/play.svg) no-repeat;
+    height: 227px;
 
+    cursor: pointer;
+	margin: auto;
+	position: absolute;
+	top: 50%; left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        transition: all 0.5s;
+}
+#tool:hover::after {
+    
+    background: url(/img/play-h.svg) no-repeat;
+   
+}
+.tool::after {
+    display: none;
+}
 /* 4. About Engine */
 .about__engine {
     padding: 30px 4% 0px 12%;

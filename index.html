@@ -106,7 +106,36 @@
                     </a>
                 </div>
             </div>
-            <img src="/img/video_bg.png" alt="">
+          
+            <div id="tool" class="video-y">
+                <img src="/img/video_bg.png">
+                <!-- <iframe width="100%" height="467" src="https://www.youtube.com/embed/q6EoRBvdVPQ?autoplay=1&amp;rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>-->
+            </div>
+            <script>$(function() { 
+                var videos  = $(".video-y");
+            
+                    videos.on("click", function(){
+                        var elm = $(this),
+                            conts   = elm.contents(),
+                            le      = conts.length,
+                            ifr     = null;
+            
+                        for(var i = 0; i<le; i++){
+                          if(conts[i].nodeType == 8) ifr = conts[i].textContent;
+                        }
+            
+                        elm.addClass("player").html(ifr);
+                        elm.off("click");
+                    });
+            });
+            </script>
+            <script>
+                var tool = document.getElementById('tool');
+
+tool.addEventListener('click', () => {
+  tool.classList.toggle('tool');
+})
+            </script>
         </div>
 
 
