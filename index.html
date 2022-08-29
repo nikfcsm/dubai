@@ -31,7 +31,7 @@
 
     <script src="js/wow.min.js"></script>
     <script>
-    new WOW().init();
+        new WOW().init();
     </script>
 
 
@@ -55,16 +55,17 @@
                     <ul>
                         <li><a href="#">Mint</a></li>
                         <li><a href="#">Stacking</a></li>
-                     
+
                     </ul>
 
                 </li>
             </ul>
         </nav>
         <ul class="header__social">
-            <li><img src="/img/tg.svg" alt=""></li>
-            <li><img src="/img/inst.svg" alt=""></li>
-            <li><img src="/img/ds.svg" alt=""></li>
+            <li><a href="https://t.me/ometamall"><img src="/img/tg.svg" alt=""></a></li>
+            <li><a href="https://instagram.com/metacentralmall?igshid=YmMyMTA2M2Y="><img src="/img/inst.svg" alt=""></a>
+            </li>
+            <li><a href="https://discord.gg/Uzz6vNGW"><img src="/img/ds.svg" alt=""></a></li>
         </ul>
         <div class="header__button">
             <a href="#ex1" rel="modal:open">Download demo version</a>
@@ -87,7 +88,9 @@
             </div>
 
         </div>
-
+        <div class="banner_people">
+            <img src="/img/bg-people.png" alt="">
+        </div>
 
 
 
@@ -106,35 +109,36 @@
                     </a>
                 </div>
             </div>
-          
+
             <div id="tool" class="video-y">
                 <img src="/img/video_bg.png">
                 <!-- <iframe width="100%" height="467" src="https://www.youtube.com/embed/q6EoRBvdVPQ?autoplay=1&amp;rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>-->
             </div>
-            <script>$(function() { 
-                var videos  = $(".video-y");
-            
-                    videos.on("click", function(){
+            <script>
+                $(function () {
+                    var videos = $(".video-y");
+
+                    videos.on("click", function () {
                         var elm = $(this),
-                            conts   = elm.contents(),
-                            le      = conts.length,
-                            ifr     = null;
-            
-                        for(var i = 0; i<le; i++){
-                          if(conts[i].nodeType == 8) ifr = conts[i].textContent;
+                            conts = elm.contents(),
+                            le = conts.length,
+                            ifr = null;
+
+                        for (var i = 0; i < le; i++) {
+                            if (conts[i].nodeType == 8) ifr = conts[i].textContent;
                         }
-            
+
                         elm.addClass("player").html(ifr);
                         elm.off("click");
                     });
-            });
+                });
             </script>
             <script>
                 var tool = document.getElementById('tool');
 
-tool.addEventListener('click', () => {
-  tool.classList.toggle('tool');
-})
+                tool.addEventListener('click', () => {
+                    tool.classList.toggle('tool');
+                })
             </script>
         </div>
 
@@ -144,9 +148,11 @@ tool.addEventListener('click', () => {
 
     <section class="about__engine">
         <div class="about__engine_left">
-            <p class="discover wow animate__animated animate__fadeIn"  data-wow-delay="0.5s">Discover a new generation engine</p>
+            <p class="discover wow animate__animated animate__fadeIn" data-wow-delay="0.5s">Discover a new generation
+                engine</p>
             <h2 class="wow animate__animated animate__fadeIn" data-wow-delay="1s">Video Motion Engine</h2>
-            <p class="discover-txt wow animate__animated animate__fadeIn" data-wow-delay="1.5s">The new toolkit brings the quality of graphics to a higher
+            <p class="discover-txt wow animate__animated animate__fadeIn" data-wow-delay="1.5s">The new toolkit brings
+                the quality of graphics to a higher
                 level, bringing it closer
                 to cinematic, and will facilitate the process of creating projects for independent authors. Unreal
                 Engine is the most popular tool for creating 3D content in real time, developing next -generation games
@@ -159,7 +165,8 @@ tool.addEventListener('click', () => {
             </div>
         </div>
         <div class="about__engine_right">
-            <div class="about__engine_right-txt wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
+            <div class="about__engine_right-txt wow animate__animated animate__fadeIn" data-wow-duration="2s"
+                data-wow-delay="0.5s">
                 <p>Your avatar will be realistic and exclusive, you will have the opportunity to scan and transfer your
                     own appearance to the metaverse and edit it, creating a desired image by the MetaHuman technology.
                 </p>
@@ -292,12 +299,18 @@ tool.addEventListener('click', () => {
     </section>
 
     <section class="clients">
-        <div><img class="clients-img wow animate__animated animate__fadeIn" src="/img/clients/client1.svg" alt="" data-wow-delay="0.3s"></div>
-        <div><img class="clients-img wow animate__animated animate__fadeIn" src="/img/clients/client2.svg" alt="" data-wow-delay="0.6s"></div>
-        <div><img class="clients-img wow animate__animated animate__fadeIn" src="/img/clients/client3.svg" alt="" data-wow-delay="0.9s"></div>
-        <div><img class="clients-img wow animate__animated animate__fadeIn" src="/img/clients/client4.svg" alt="" data-wow-delay="1.2s"></div>
-        <div><img class="clients-img wow animate__animated animate__fadeIn" src="/img/clients/client5.svg" alt="" data-wow-delay="1.5s"></div>
-        <div><img class="clients-img wow animate__animated animate__fadeIn" src="/img/clients/client6.svg" alt="" data-wow-delay="1.8s"></div>
+        <div><img class="clients-img wow animate__animated animate__fadeIn" src="/img/clients/client1.svg" alt=""
+                data-wow-delay="0.3s"></div>
+        <div><img class="clients-img wow animate__animated animate__fadeIn" src="/img/clients/client2.svg" alt=""
+                data-wow-delay="0.6s"></div>
+        <div><img class="clients-img wow animate__animated animate__fadeIn" src="/img/clients/client3.svg" alt=""
+                data-wow-delay="0.9s"></div>
+        <div><img class="clients-img wow animate__animated animate__fadeIn" src="/img/clients/client4.svg" alt=""
+                data-wow-delay="1.2s"></div>
+        <div><img class="clients-img wow animate__animated animate__fadeIn" src="/img/clients/client5.svg" alt=""
+                data-wow-delay="1.5s"></div>
+        <div><img class="clients-img wow animate__animated animate__fadeIn" src="/img/clients/client6.svg" alt=""
+                data-wow-delay="1.8s"></div>
 
 
     </section>
@@ -306,28 +319,39 @@ tool.addEventListener('click', () => {
         <div class="staff__block wow animate__animated animate__fadeIn" data-wow-delay="0.3s">
             <img class="wow animate__animated animate__fadeIn" src="/img/staff/staff1.png" alt="" data-wow-delay="0.6s">
             <h3 class="wow animate__animated animate__fadeIn" data-wow-delay="1s">Anatoliy</h3>
-            <p class="wow animate__animated animate__fadeIn" data-wow-delay="1.4s">Managing the development team and the IT department, creating and implementing technology strategies, identifying what technologies can be used to improve the company’s products and services, creating and overseeing high-level KPIs for IT department</p>
+            <p class="wow animate__animated animate__fadeIn" data-wow-delay="1.4s">Managing the development team and the
+                IT department, creating and implementing technology strategies, identifying what technologies can be
+                used to improve the company’s products and services, creating and overseeing high-level KPIs for IT
+                department</p>
         </div>
         <div class="staff__block wow animate__animated animate__fadeIn" data-wow-delay="0.3s">
             <img class="wow animate__animated animate__fadeIn" src="/img/staff/staff2.png" alt="" data-wow-delay="0.6s">
             <h3 class="wow animate__animated animate__fadeIn" data-wow-delay="1s">Konstantin</h3>
-            <p class="wow animate__animated animate__fadeIn" data-wow-delay="1.4s">Entire project coordination, hiring the right talent, developing the business, exploring market opportunities, boosting morale</p>
+            <p class="wow animate__animated animate__fadeIn" data-wow-delay="1.4s">Entire project coordination, hiring
+                the right talent, developing the business, exploring market opportunities, boosting morale</p>
         </div>
         <div class="staff__block wow animate__animated animate__fadeIn" data-wow-delay="0.3s">
             <img class="wow animate__animated animate__fadeIn" src="/img/staff/staff3.png" alt="" data-wow-delay="0.6s">
             <h3 class="wow animate__animated animate__fadeIn" data-wow-delay="1s">Sofia</h3>
-            <p class="wow animate__animated animate__fadeIn" data-wow-delay="1.4s">Communication with investors, managing social networks, helping clients and customers understand what a company offers, responding to information requests from clients and members of the media, writing or editing speeches.</p>
+            <p class="wow animate__animated animate__fadeIn" data-wow-delay="1.4s">Communication with investors,
+                managing social networks, helping clients and customers understand what a company offers, responding to
+                information requests from clients and members of the media, writing or editing speeches.</p>
         </div>
         <div class="staff__block wow animate__animated animate__fadeIn" data-wow-delay="0.3s">
             <img class="wow animate__animated animate__fadeIn" src="/img/staff/staff4.png" alt="" data-wow-delay="0.6s">
             <h3 class="wow animate__animated animate__fadeIn" data-wow-delay="1s">Katrin</h3>
-            <p class="wow animate__animated animate__fadeIn" data-wow-delay="1.4s">chief administrative officer/ Human Resources  
-                Supervising all HR activities, communications, reports, requests and documents created and received by the team. Coordinating schedules, arranging meetings</p>
+            <p class="wow animate__animated animate__fadeIn" data-wow-delay="1.4s">chief administrative officer/ Human
+                Resources
+                Supervising all HR activities, communications, reports, requests and documents created and received by
+                the team. Coordinating schedules, arranging meetings</p>
         </div>
         <div class="staff__block wow animate__animated animate__fadeIn" data-wow-delay="0.3s">
             <img class="wow animate__animated animate__fadeIn" src="/img/staff/staff5.png" alt="" data-wow-delay="0.6s">
             <h3 class="wow animate__animated animate__fadeIn" data-wow-delay="1s">Eugene</h3>
-            <p class="wow animate__animated animate__fadeIn" data-wow-delay="1.4s">Managing the development team, coding the site’s navigation, designing buttons and other controls for the site, creating mock-ups of the site for the client’s approval, fixing any functionality issues, updating and maintaining the site, making backup files of the site</p>
+            <p class="wow animate__animated animate__fadeIn" data-wow-delay="1.4s">Managing the development team, coding
+                the site’s navigation, designing buttons and other controls for the site, creating mock-ups of the site
+                for the client’s approval, fixing any functionality issues, updating and maintaining the site, making
+                backup files of the site</p>
         </div>
     </section>
 
@@ -387,7 +411,7 @@ tool.addEventListener('click', () => {
 
             <div class="modal__wrapper_left"></div>
             <div class="modal__wrapper_right">
-                <div class="modal__wrapper_right-btn"> <img class="modal-logo" src="/img/logo-header.svg" alt="">
+                <div class="modal__wrapper_right-btn"> <img class="modal-logo" src="/img/modal_logo.svg" alt="">
                     <div class="modal__wrapper_right-download">
                         <span class="win">
                             <p>Windows</p>
@@ -488,7 +512,7 @@ tool.addEventListener('click', () => {
 
     <script src="js/owl.carousel.min.js"></script>
     <script src="/js/main.js"></script>
- 
+
 
 
 
