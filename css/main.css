@@ -134,7 +134,7 @@ html {
 body {
     scroll-behavior: smooth;
     background: #181818;
-    backdrop-filter: blur(50px);
+    /* backdrop-filter: blur(50px); */
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     line-height: 1;
@@ -144,13 +144,13 @@ body {
 header {
     position: relative;
     z-index: 2;
-    clip-path: polygon(23% 100%, 0% 100%, 0% 0%, 100% 0px, 100% 100%, 72% 100%, 69% 90%, 25% 90%);
+    /* clip-path: polygon(23% 100%, 0% 100%, 0% 0%, 100% 0px, 100% 100%, 72% 100%, 69% 90%, 25% 90%); */
     padding-top: 35px;
     height: 103.5px;
     justify-content: space-evenly;
     display: flex;
     width: 100%;
-    background: #181818;
+    /* background: #181818; */
 }
 
 header ul {
@@ -288,6 +288,16 @@ nav ul ul li {
 
 }
 
+.header__clipath {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    clip-path: polygon(23% 100%, 0% 100%, 0% 0%, 100% 0px, 100% 100%, 72% 100%, 69% 90%, 25% 90%);
+    background: #181818;
+    z-index: -1;
+}
+
 /* 2. Banner */
 .banner {
     position: relative;
@@ -296,7 +306,7 @@ nav ul ul li {
     margin-top: -16px;
     background: #000;
     /* height: 2000px; */
-    clip-path: polygon(20% 93%, 0% 93%, 0% 0%, 100% 0px, 100% 93%, 80% 93%, 78% 100%, 22% 100%);
+    clip-path: polygon(25% 93%, 0% 93%, 0% 0%, 100% 0%, 100% 93%, 72% 93%, 70% 100%, 28% 100%);
 }
 
 .video_banner {
@@ -307,7 +317,7 @@ nav ul ul li {
     left: 50%;
     z-index: 0;
     position: absolute;
-    clip-path: polygon(20% 93%, 0% 93%, 0% 0%, 100% 0px, 100% 93%, 80% 93%, 78% 100%, 22% 100%);
+    clip-path: polygon(25% 93%, 0% 93%, 0% 0%, 100% 0%, 100% 93%, 72% 93%, 70% 100%, 28% 100%);
 }
 
 .banner::after {
@@ -361,7 +371,7 @@ h1 {
     font-weight: 700;
     font-size: 24px;
     line-height: 24px;
-    padding: 23px 49px 23px 20px;
+    padding: 28px 39px 23px 31px;
     clip-path: polygon(0px 33px, 10.04% 0%, 100% 0px, 100% 100%, 0px 100%);
     background: linear-gradient(91.89deg, #FFDDA4 0%, #F4CB7C 100%);
     border: 1px solid #333333;
@@ -375,7 +385,7 @@ h1 {
 }
 
 .banner__btn2 {
-    padding: 20px 82px 23px 20px;
+    padding: 28px 82px 23px 20px;
     display: flex;
     font-family: 'Barlow';
     font-style: normal;
@@ -477,7 +487,7 @@ h1 {
 
 /* 4. About Engine */
 .about__engine {
-    padding: 0px 4% 0px 12%;
+    padding: 30px 4% 0px 12%;
     display: flex;
     justify-content: space-between;
 }
@@ -694,6 +704,7 @@ h1 {
 }
 
 .thumb {
+    line-height: 0;
     position: relative;
 }
 
@@ -703,14 +714,25 @@ h1 {
     height: 44px;
     position: absolute;
     right: -1px;
-    bottom: 2px;
+    bottom: 0;
     background: url(/img/arrow-slide.svg) no-repeat;
 }
-
-.active {
-    outline: 4px solid #D2B277;
+.thumb:hover::after {
+    content: "";
+    width: 56px;
+    height: 44px;
+    position: absolute;
+    right: -1px;
+    bottom: 0;
+    background: url(/img/arrow-slide-h.svg) no-repeat;
 }
-
+.active {
+    border: 4px solid #D2B277;
+    border-radius: 0px 0px 32px 0px;
+}
+.owl-stage .active {
+    border:none;
+}
 .slide-item p {
     font-family: 'Barlow', sans-serif;
     text-transform: inherit;
@@ -744,7 +766,7 @@ hr {
 
 /* 7. GamePlay */
 .gameplay {
-    margin: 100px auto;
+    margin: 100px auto 44px auto;
     padding: 0px 5.8% 0px 8.4%;
 }
 
@@ -856,7 +878,7 @@ hr {
 }
 
 .staff p {
-    max-width: 309px;
+    max-width: 343px;
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 500;
@@ -874,6 +896,7 @@ hr {
 
 /* 10. Blog */
 .blog {
+    margin-top: 94px;
     padding: 0px 4.8% 0px 5.8%;
     display: flex;
     justify-content: space-between;
@@ -963,4 +986,187 @@ footer li {
 
 .footer__social a:nth-child(3):hover {
     background: url(/img/ds-h.svg) no-repeat;
+}
+/* 11. Modal */
+.modal li {
+    list-style-type: none;
+}
+.modal__wrapper {
+    display: flex;
+}
+.modal__wrapper_left {
+    background: url(http://127.0.0.1:5500/img/modal-people.png) no-repeat;
+    width: 56%;
+    height: auto;
+    object-fit: cover;
+    min-height: 595px;
+    background-position: -80% 0%;
+}
+
+
+
+
+
+.modal__wrapper_right {
+    padding-top: 141px;
+}
+.modal-logo {
+    padding-bottom: 35px;
+}
+.modal__wrapper_right-download {
+    display: flex;
+    align-items: center;
+}
+.modal__wrapper_right-download {
+    padding-bottom: 23px;
+}
+.modal__wrapper_right-download span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 175.9%;
+    
+   
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+}
+
+.modal__btn_active {
+    margin-left: 50px;
+    height: 42px;
+    width: 217px;
+    background: url(/img/modal-btn-active.svg) no-repeat;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #484848;
+    display: flex;
+    align-items: center;
+    padding-left: 14px;
+}
+.modal__btn_deactive {
+    margin-left: 50px;
+    height: 42px;
+    width: 217px;
+    background: url(/img/modal-btn-deactive.svg) no-repeat;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #838383;
+    display: flex;
+    align-items: center;
+    padding-left: 61px
+}
+.win, .macos, .ios, .android {
+    min-width: 200px;
+    position: relative;
+}
+.win::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    background: url(/img/ico-win.svg) no-repeat;
+    width: 48px;
+    height: 48px;
+}
+.macos::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    background: url(/img/ico-macos.svg) no-repeat;
+    width: 48px;
+    height: 48px;
+}
+.android::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    background: url(/img/ico-android.svg) no-repeat;
+    width: 48px;
+    height: 48px;
+}
+.ios::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    background: url(/img/ico-ios.svg) no-repeat;
+    width: 48px;
+    height: 48px;
+}
+.modal__wrapper_right-download p {
+    padding-left: 70px;
+}
+.modal__social {
+    margin: 0 auto;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.modal__social li:first-child {
+    padding-left: 0;
+}
+.modal__social a {
+    margin-left: 20px;
+}
+
+.modal__social a:nth-child(1):hover {
+    background: url(/img/tg-h.svg) no-repeat;
+}
+
+.modal__social a:nth-child(2):hover {
+    background: url(/img/inst-h.svg) no-repeat;
+}
+
+.modal__social a:nth-child(3):hover {
+    background: url(/img/ds-h.svg) no-repeat;
+}
+
+/* Animations */
+
+.delay-01 {
+    -webkit-animation-delay: .1s;
+    animation-delay: .1s
+}
+
+.delay-02 {
+    -webkit-animation-delay: .2s;
+    animation-delay: .2s
+}
+
+.delay-03 {
+    -webkit-animation-delay: .3s;
+    animation-delay: .3s
+}
+
+.delay-04 {
+    -webkit-animation-delay: .4s;
+    animation-delay: .4s
+}
+
+.delay-05 {
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s
+}
+
+.delay-06 {
+    -webkit-animation-delay: .6s;
+    animation-delay: .6s
+}
+
+.delay-07 {
+    -webkit-animation-delay: .7s;
+    animation-delay: .7s
+}
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn
 }

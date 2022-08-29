@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="css/main.css?ver=123">
     <link rel="stylesheet" href="css/screen.css?ver=123">
     <link rel="stylesheet" href="owlcarousel/owl.carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -25,12 +25,21 @@
     <link rel="icon" href="/favicon.png" type="image/x-icon">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+    <link rel="stylesheet" href="css/jquery.modal.min.css" />
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
 
 
 </head>
 
-<body onload="init()">
+<!-- <body onload="init()"> -->
+
+<body>
     <header>
         <a class="logo_a" href="/"> <img class="logo" src="/img/logo-header.svg" alt=""></a>
         <nav>
@@ -58,8 +67,9 @@
             <li><img src="/img/ds.svg" alt=""></li>
         </ul>
         <div class="header__button">
-            <a href="#">Download demo version</a>
+            <a href="#ex1" rel="modal:open">Download demo version</a>
         </div>
+        <div class="header__clipath"></div>
     </header>
     <section class="banner">
         <video class="video_banner dnmob" autoplay="" loop="" muted="" playsinline="">
@@ -90,7 +100,7 @@
                 <p>Watch the video to learn more</p>
 
                 <div class="video__btn1">
-                    <a href="#">
+                    <a href="https://www.youtube.com/channel/UCrHERvZPWcD_iX8iMClHvaQ">
 
                         <p>Watch all videos</p>
                     </a>
@@ -105,13 +115,14 @@
 
     <section class="about__engine">
         <div class="about__engine_left">
-            <p class="discover">Discover a new generation engine</p>
-            <h2>Video Motion Engine</h2>
-            <p class="discover-txt">The new toolkit brings the quality of graphics to a higher level, bringing it closer
+            <p class="discover wow animate__animated animate__fadeIn"  data-wow-delay="0.5s">Discover a new generation engine</p>
+            <h2 class="wow animate__animated animate__fadeIn" data-wow-delay="1s">Video Motion Engine</h2>
+            <p class="discover-txt wow animate__animated animate__fadeIn" data-wow-delay="1.5s">The new toolkit brings the quality of graphics to a higher
+                level, bringing it closer
                 to cinematic, and will facilitate the process of creating projects for independent authors. Unreal
                 Engine is the most popular tool for creating 3D content in real time, developing next -generation games
                 and sharing experiences in all areas, be it video games, movies or short interactive experiences.</p>
-            <div class="discover__btn">
+            <div class="discover__btn wow animate__animated animate__fadeIn" data-wow-delay="1.8s">
                 <a href="#">
 
                     <p>Learn more</p>
@@ -119,7 +130,7 @@
             </div>
         </div>
         <div class="about__engine_right">
-            <div class="about__engine_right-txt">
+            <div class="about__engine_right-txt wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
                 <p>Your avatar will be realistic and exclusive, you will have the opportunity to scan and transfer your
                     own appearance to the metaverse and edit it, creating a desired image by the MetaHuman technology.
                 </p>
@@ -131,13 +142,13 @@
     </section>
     <section class="model"></section>
     <section class="roadmap">
-        <h2>ROADMAP</h2>
+        <h2 class="wow animate__animated animate__fadeIn" data-wow-delay="2s">ROADMAP</h2>
         <img src="/img/roadmap.png" alt="">
     </section>
 
     <section class="purchase">
         <div class="purchase__wrapper">
-            <div class="purchase__wrapper_left">
+            <div class="purchase__wrapper_left wow animate__animated animate__fadeInLeft">
                 <div class="purchase__wrapper_left-txt">
                     <h2>Purchase of NFT premises</h2>
                     <p>Each location has its own purpose:</p>
@@ -153,7 +164,7 @@
                 </div>
                 <div class="purchase__wrapper_left-thumb">
                     <a href="#hash1">
-                        <div class="thumb"><img src="/img/1.png" alt=""></div>
+                        <div class="thumb active"><img src="/img/1.png" alt=""></div>
                     </a>
                     <a href="#hash2">
                         <div class="thumb"> <img src="/img/2.png" alt=""></div>
@@ -163,14 +174,14 @@
                     </a>
                 </div>
             </div>
-            <div class="purchase__wrapper_right">
+            <div class="purchase__wrapper_right wow animate__animated animate__fadeInRight">
                 <p>The Project creates its own Web3-bas ed metaverse. The entire MCM space will be made of a collection
                     of NFTs that can be bought, sold or r ented. A total of 200 NFTs will be traded there. It is planned
                     to integrate crypto wallets that will support cryptocurrencies used throughout the Project. It will
                     make it possible to safely store NFTs inside the metaverse.</p>
                 <div class="owl-carousel">
 
-                    <div data-hash="hash1" class="slide-item">
+                    <div data-hash="hash1" class="slide-item ">
                         <img src="/img/thumbnail-1.png" alt="">
 
                     </div>
@@ -207,26 +218,26 @@
             virtual reality spaces for:
         </p>
         <div class="gameplay__wrapper">
-            <div class="gameplay__wrapper_block">
+            <div class="gameplay__wrapper_block wow animate__animated animate__fadeInTopLeft ">
                 <h3>Extra or Basic INCOME</h3>
                 <p>Complete simple tasks at the META CENTRAL MALL or open your own store, cinema, art gallery or other
                     location to attract visitors and make money.</p>
             </div>
 
-            <div class="gameplay__wrapper_block">
+            <div class="gameplay__wrapper_block wow animate__animated animate__fadeInDown">
                 <h3>Fascinating SHOPPING</h3>
                 <p>It is a completely new e-commerce paradigm for digital and real goods. Try on clothes, shoes and
                     other useful items using the VR and AR technologies.</p>
             </div>
 
 
-            <div class="gameplay__wrapper_block">
+            <div class="gameplay__wrapper_block wow animate__animated animate__fadeInTopRight">
                 <h3>Exciting ENTERTAINMENT</h3>
                 <p>Spend time with friends, have fun, go on dates, and chat in the Metaverse.
                 </p>
             </div>
 
-            <div class="gameplay__wrapper_block">
+            <div class="gameplay__wrapper_block wow animate__animated animate__fadeInBottomLeft">
                 <h3>Useful TRAINING</h3>
                 <p>Master various skills by way of cutting-edge 3D-technologies.
 
@@ -234,14 +245,14 @@
             </div>
 
 
-            <div class="gameplay__wrapper_block">
+            <div class="gameplay__wrapper_block wow animate__animated animate__fadeInUp">
                 <h3>Effective BUSINESS</h3>
                 <p>Use the MCM facilities to try a new way of arranging consultations, meetings and other business
                     interactions.
                 </p>
             </div>
 
-            <div class="gameplay__wrapper_block">
+            <div class="gameplay__wrapper_block wow animate__animated animate__fadeInBottomRight">
                 <h3>Targeted ADVERTISING</h3>
                 <p>Place your ads for all users of the Metaverse and let the Algorithm help you find your customers.
                 </p>
@@ -252,41 +263,42 @@
     </section>
 
     <section class="clients">
-        <div><img class="clients-img" src="/img/clients/client1.svg" alt=""></div>
-        <div><img class="clients-img" src="/img/clients/client2.svg" alt=""></div>
-        <div><img class="clients-img" src="/img/clients/client3.svg" alt=""></div>
-        <div><img class="clients-img" src="/img/clients/client4.svg" alt=""></div>
-        <div><img class="clients-img" src="/img/clients/client5.svg" alt=""></div>
-        <div><img class="clients-img" src="/img/clients/client6.svg" alt=""></div>
+        <div><img class="clients-img wow animate__animated animate__fadeIn" src="/img/clients/client1.svg" alt="" data-wow-delay="0.3s"></div>
+        <div><img class="clients-img wow animate__animated animate__fadeIn" src="/img/clients/client2.svg" alt="" data-wow-delay="0.6s"></div>
+        <div><img class="clients-img wow animate__animated animate__fadeIn" src="/img/clients/client3.svg" alt="" data-wow-delay="0.9s"></div>
+        <div><img class="clients-img wow animate__animated animate__fadeIn" src="/img/clients/client4.svg" alt="" data-wow-delay="1.2s"></div>
+        <div><img class="clients-img wow animate__animated animate__fadeIn" src="/img/clients/client5.svg" alt="" data-wow-delay="1.5s"></div>
+        <div><img class="clients-img wow animate__animated animate__fadeIn" src="/img/clients/client6.svg" alt="" data-wow-delay="1.8s"></div>
 
 
     </section>
 
     <section class="staff">
-        <div class="staff__block">
-            <img src="/img/staff/staff1.png" alt="">
-            <h3>Anatoliy</h3>
-            <p>Chief Technical Officer</p>
+        <div class="staff__block wow animate__animated animate__fadeIn" data-wow-delay="0.3s">
+            <img class="wow animate__animated animate__fadeIn" src="/img/staff/staff1.png" alt="" data-wow-delay="0.6s">
+            <h3 class="wow animate__animated animate__fadeIn" data-wow-delay="1s">Anatoliy</h3>
+            <p class="wow animate__animated animate__fadeIn" data-wow-delay="1.4s">Managing the development team and the IT department, creating and implementing technology strategies, identifying what technologies can be used to improve the company’s products and services, creating and overseeing high-level KPIs for IT department</p>
         </div>
-        <div class="staff__block">
-            <img src="/img/staff/staff2.png" alt="">
-            <h3>Konstantin</h3>
-            <p>Co-founder</p>
+        <div class="staff__block wow animate__animated animate__fadeIn" data-wow-delay="0.3s">
+            <img class="wow animate__animated animate__fadeIn" src="/img/staff/staff2.png" alt="" data-wow-delay="0.6s">
+            <h3 class="wow animate__animated animate__fadeIn" data-wow-delay="1s">Konstantin</h3>
+            <p class="wow animate__animated animate__fadeIn" data-wow-delay="1.4s">Entire project coordination, hiring the right talent, developing the business, exploring market opportunities, boosting morale</p>
         </div>
-        <div class="staff__block">
-            <img src="/img/staff/staff3.png" alt="">
-            <h3>Sofia</h3>
-            <p>External relations and communications specialist/ PR</p>
+        <div class="staff__block wow animate__animated animate__fadeIn" data-wow-delay="0.3s">
+            <img class="wow animate__animated animate__fadeIn" src="/img/staff/staff3.png" alt="" data-wow-delay="0.6s">
+            <h3 class="wow animate__animated animate__fadeIn" data-wow-delay="1s">Sofia</h3>
+            <p class="wow animate__animated animate__fadeIn" data-wow-delay="1.4s">Communication with investors, managing social networks, helping clients and customers understand what a company offers, responding to information requests from clients and members of the media, writing or editing speeches.</p>
         </div>
-        <div class="staff__block">
-            <img src="/img/staff/staff4.png" alt="">
-            <h3>Katrin</h3>
-            <p>Chief administrative officer</p>
+        <div class="staff__block wow animate__animated animate__fadeIn" data-wow-delay="0.3s">
+            <img class="wow animate__animated animate__fadeIn" src="/img/staff/staff4.png" alt="" data-wow-delay="0.6s">
+            <h3 class="wow animate__animated animate__fadeIn" data-wow-delay="1s">Katrin</h3>
+            <p class="wow animate__animated animate__fadeIn" data-wow-delay="1.4s">chief administrative officer/ Human Resources  
+                Supervising all HR activities, communications, reports, requests and documents created and received by the team. Coordinating schedules, arranging meetings</p>
         </div>
-        <div class="staff__block">
-            <img src="/img/staff/staff5.png" alt="">
-            <h3>Eugene</h3>
-            <p>Web-designer</p>
+        <div class="staff__block wow animate__animated animate__fadeIn" data-wow-delay="0.3s">
+            <img class="wow animate__animated animate__fadeIn" src="/img/staff/staff5.png" alt="" data-wow-delay="0.6s">
+            <h3 class="wow animate__animated animate__fadeIn" data-wow-delay="1s">Eugene</h3>
+            <p class="wow animate__animated animate__fadeIn" data-wow-delay="1.4s">Managing the development team, coding the site’s navigation, designing buttons and other controls for the site, creating mock-ups of the site for the client’s approval, fixing any functionality issues, updating and maintaining the site, making backup files of the site</p>
         </div>
     </section>
 
@@ -341,8 +353,76 @@
             </a>
         </ul>
     </footer>
+    <div id="ex1" class="modal">
+        <div class="modal__wrapper">
+
+            <div class="modal__wrapper_left"></div>
+            <div class="modal__wrapper_right">
+                <div class="modal__wrapper_right-btn"> <img class="modal-logo" src="/img/logo-header.svg" alt="">
+                    <div class="modal__wrapper_right-download">
+                        <span class="win">
+                            <p>Windows</p>
+                        </span>
+                        <a href="#" class="modal__btn_active">
+                            Download demo version
+                        </a></div>
+
+                </div>
+
+                <div class="modal__wrapper_right-btn">
+                    <div class="modal__wrapper_right-download">
+                        <span class="macos">
+                            <p>MAC OC</p>
+                        </span>
+                        <a href="#" class="modal__btn_deactive">
+                            in progress
+                        </a></div>
+
+                </div>
+
+                <div class="modal__wrapper_right-btn">
+                    <div class="modal__wrapper_right-download">
+                        <span class="android">
+                            <p>android</p>
+                        </span>
+                        <a href="#" class="modal__btn_deactive">
+                            in progress
+                        </a></div>
+
+                </div>
+
+
+                <div class="modal__wrapper_right-btn">
+                    <div class="modal__wrapper_right-download">
+                        <span class="ios">
+                            <p>ios</p>
+                        </span>
+                        <a href="#" class="modal__btn_deactive">
+                            in progress
+                        </a></div>
+
+                </div>
+                <ul class="modal__social">
+                    <a href="https://t.me/ometamall">
+                        <li><img src="/img/tg.svg" alt=""></li>
+                    </a>
+                    <a href="https://instagram.com/metacentralmall?igshid=YmMyMTA2M2Y=">
+                        <li><img src="/img/inst.svg" alt=""></li>
+                    </a>
+                    <a href="https://discord.gg/Uzz6vNGW">
+                        <li><img src="/img/ds.svg" alt=""></li>
+                    </a>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
     <script src="js/owl.carousel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
 
     <script>
         $('.owl-carousel').owlCarousel({
@@ -379,7 +459,7 @@
 
     <script src="js/owl.carousel.min.js"></script>
     <script src="/js/main.js"></script>
-
+ 
 
 
 
