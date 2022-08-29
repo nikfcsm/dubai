@@ -182,8 +182,9 @@ header ul {
 }
 
 .menu a {
+    z-index: 224;
     color: #FFFFFF;
-
+    position: relative;
     opacity: 0.5;
     transition: all 0.5s;
 }
@@ -199,11 +200,14 @@ nav ul {
 }
 
 nav ul ul {
+    
     display: none;
     position: absolute;
     top: 100%;
     z-index: 222;
+   
 }
+
 
 nav ul ul li {
     text-align: left;
@@ -215,7 +219,17 @@ nav ul li:hover>ul {
 
     display: inherit;
 }
-
+nav ul li:hover>ul::after {
+    z-index: -1;
+    left: -12px;
+    content: "";
+    position: absolute;
+    background: url(/img/dropdown.svg) no-repeat;
+    width: 105px;
+    height: 105px;
+    top: -28px;
+    z-index: -1;
+}
 
 nav ul ul li {
     min-width: 170px;
